@@ -13,15 +13,26 @@ def bigger_it(num):
 
 
 def number_to_weekday(num):
-    if num < 0:
-        num = 0
-        print 'Negative changed to zero'
-    elif num == 0:
-        print 'Zero'
-    elif num == 1:
-        print 'Single'
+    weekday = ''
+    if num == 1:
+        weekday = 'Sunday'
+    elif num == 2:
+        weekday = 'Monday'
+    elif num == 3:
+        weekday = 'Tuesday'
+    elif num == 4:
+        weekday = 'Wednesday'
+    elif num == 5:
+        weekday = 'Thursday'
+    elif num == 6:
+        weekday = 'Friday'
+    elif num == 7:
+        weekday = 'Saturday'
     else:
-        print 'More'
+        weekday = 'Baxterday'
+        raise Exception('Hey! That is not a weekday!')
+
+    return weekday
 
 
 if __name__ == "__main__":
