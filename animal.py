@@ -32,6 +32,12 @@ class Goat(Animal):
         self.food = 'alfalfa'
         self.name = 'Goat'
 
+class Horse(Animal):
+    def __init__(self):
+        self.sound = 'neigh'
+        self.food = 'hay'
+        self.name = 'Horse'
+
 
 if __name__ == '__main__':
     cat = Cat()
@@ -42,5 +48,9 @@ if __name__ == '__main__':
 
     dog = Dog()
     dog.talk()
+
+    horse = Horse()
+    horse.talk()
+
 
 
